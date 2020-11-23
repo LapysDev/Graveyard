@@ -210,8 +210,8 @@ int main(int const, char const* const[]) {
     int exitCode = EXIT_SUCCESS;
 
     // Constant > Structure
-    MeGaSTRuCT<char const* const> const structure = {"Hello, World!"};
-    (void) structure;
+    MeGaSTRuCT<char const* const> const structure = MeGaSTRuCT<char const* const>::MeGaSTRuCT("Hello, World!");
+    structure.::~MeGaSTRuCT<char const* const>();
 
     // Terminate
     return exitCode;
